@@ -36,6 +36,7 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 .link {
   text-decoration: none;
 }
@@ -96,6 +97,14 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.contacts-list .link {
+  display: flex;
+  align-items: baseline;
+}
+.contacts-list .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
 .nav-list > .item:not(:first-child) {
   margin-left: 50px;
 }
@@ -123,10 +132,21 @@ img {
 
 /*****************main index*******************/
 .hero {
+  height: 600px;
+  max-width: 1600px;
   padding: 200px 0;
   text-align: center;
-  background-color: var(--footer-background-color);
   color: var(--btn-text-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/index/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  background-color: #c4c4c4;
 }
 
 .hero-title {
